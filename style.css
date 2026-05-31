@@ -162,6 +162,120 @@ a {
     color: #F9F6F0;
 }
 
+.about-container {
+    min-height: 100vh;
+    padding: 10rem 4% 4rem 4%;
+    display: flex;
+    gap: 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-sidebar {
+    flex: 1;
+    max-width: 350px;
+}
+
+.profile-image-container {
+    width: 100%;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.contact-info h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(212, 201, 188, 0.6);
+    padding-bottom: 0.5rem;
+}
+
+.contact-name {
+    font-weight: 500;
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
+}
+
+.contact-info p, .email-link {
+    font-size: 0.85rem;
+    color: #A39687;
+}
+
+.email-link:hover {
+    color: #2B2927;
+    opacity: 1;
+}
+
+.about-content {
+    flex: 2;
+}
+
+.about-content .subtitle {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #A39687;
+    margin-bottom: 1rem;
+}
+
+.about-content h1 {
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+}
+
+.bio-text p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.skills-section {
+    margin-top: 3.5rem;
+}
+
+.skills-section h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    list-style: none;
+}
+
+.skills-list li {
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.skills-list li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: #A39687;
+}
+
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
@@ -171,6 +285,30 @@ a {
 .fade-in.appear {
     opacity: 1;
     transform: translateY(0);
+}
+
+@media (max-width: 900px) {
+    .about-container {
+        flex-direction: column;
+        gap: 3rem;
+        padding-top: 12rem;
+    }
+    .about-sidebar {
+        max-width: 100%;
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+    .profile-image-container {
+        max-width: 200px;
+        margin-bottom: 0;
+    }
+    .contact-info {
+        flex-grow: 1;
+    }
+    .skills-list {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 768px) {
