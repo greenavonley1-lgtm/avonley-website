@@ -12,8 +12,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     trigger.addEventListener('click', (e) => {
         if (window.innerWidth <= 768) {
-            e.preventDefault();
-            dropdown.classList.toggle('show');
+            if (!dropdown.classList.contains('show')) {
+                e.preventDefault();
+                dropdown.classList.add('show');
+            }
         }
     });
 
