@@ -162,6 +162,89 @@ a {
     color: #F9F6F0;
 }
 
+.gallery-preview-container {
+    min-height: 100vh;
+    padding: 10rem 4% 6rem 4%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-preview-container .subtitle {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #A39687;
+    margin-bottom: 0.5rem;
+}
+
+.gallery-preview-container .page-title {
+    margin-bottom: 4rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem 3rem;
+}
+
+.project-card {
+    display: block;
+    width: 100%;
+}
+
+.project-image-box {
+    width: 100%;
+    height: 55vh;
+    overflow: hidden;
+    background-color: #EFECE6;
+    margin-bottom: 1.25rem;
+}
+
+.project-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.project-card:hover .project-image-box img {
+    transform: scale(1.03);
+}
+
+.project-meta {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+.project-num {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    color: #A39687;
+    font-weight: 400;
+}
+
+.project-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.view-project-link {
+    grid-column: 2;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #A39687;
+    margin-top: 0.25rem;
+}
+
+.project-card:hover .view-project-link {
+    color: #2B2927;
+}
+
 .about-container {
     min-height: 100vh;
     padding: 10rem 4% 4rem 4%;
@@ -276,6 +359,75 @@ a {
     color: #A39687;
 }
 
+.experience-container {
+    min-height: 100vh;
+    padding: 10rem 4% 6rem 4%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.experience-container .subtitle {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #A39687;
+    margin-bottom: 0.5rem;
+}
+
+.experience-container .page-title {
+    margin-bottom: 4rem;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+.timeline-item {
+    display: flex;
+    border-top: 1px solid rgba(212, 201, 188, 0.4);
+    padding-top: 2rem;
+}
+
+.timeline-date {
+    flex: 0 0 20%;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    color: #2B2927;
+}
+
+.timeline-content {
+    flex: 1;
+}
+
+.timeline-content h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.4rem;
+    line-height: 1.2;
+}
+
+.timeline-content h3 {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: #A39687;
+    margin-bottom: 1.2rem;
+    letter-spacing: 0.02em;
+}
+
+.timeline-content p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    font-weight: 300;
+    color: #4A4744;
+    text-align: justify;
+}
+
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
@@ -344,5 +496,24 @@ a {
     }
     h1 {
         font-size: 2rem;
+    }
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .project-image-box {
+        height: 45vh;
+    }
+    .timeline-item {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .timeline-date {
+        font-weight: 500;
+        font-size: 0.85rem;
+        color: #A39687;
+    }
+    .timeline-content h2 {
+        font-size: 1.25rem;
     }
 }
