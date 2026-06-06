@@ -178,7 +178,20 @@ a {
 }
 
 .gallery-preview-container .page-title, .project-detail-container .page-title {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
+}
+
+.gallery-intro-text {
+    max-width: 800px;
+    margin-bottom: 5rem;
+}
+
+.gallery-intro-text p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    font-weight: 300;
+    color: #4A4744;
+    text-align: justify;
 }
 
 .projects-grid {
@@ -603,6 +616,9 @@ a {
     }
     h1 {
         font-size: 2rem;
+    }
+    .gallery-intro-text p {
+        text-align: left;
     }
     .projects-grid {
         grid-template-columns: 1fr;
