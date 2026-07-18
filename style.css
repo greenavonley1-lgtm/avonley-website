@@ -729,3 +729,16 @@ a {
         width: 60px;
     }
 }
+
+.flowchart-page {
+    width: 100%;
+    background-color: #EFECE6;
+    padding: 0.5rem;
+}
+
+.flowchart-page img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
